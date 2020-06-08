@@ -1,5 +1,5 @@
-# DatabaseSystem
-Movie Recommendation System 2020
+# DatabaseSystem 2020 Project
+Movie Recommendation System
 
 ## Project Participants:
 - @Xilie Xu (https://github.com/GodXuxilie)
