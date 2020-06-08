@@ -8,10 +8,21 @@ Movie Recommendation System 2020
 - @Feifan Song (https://github.com/F2-Song)
 
 ## Usages
-First step:
+Step 1:
+```shell
+python data_preprocess.py
+```
+Step 2:
+```shell
+python feature.py
+```
+Step 3:
+```shell
+python train.py
+```
+Step 4:
 ```shell
 python backend.py
 ```
-Second step:
+Step 5:
 Opend index.html
-
