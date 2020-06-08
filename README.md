@@ -14,11 +14,11 @@ python data_preprocess.py
 ```
 Step 2:
 ```shell
-python feature.py
+python train.py
 ```
 Step 3:
 ```shell
-python train.py
+python feature.py
 ```
 Step 4:
 ```shell
