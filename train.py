@@ -141,4 +141,4 @@ for epoch in range(0, epochs):
     time, train_loss = train(model, train_loader, optimizer)
     valid_loss = eval_testloss(model,validation_loader)
     print('time:{}\ttrain_acc:{}\tvalid_acc:{}'.format(time,train_loss,valid_loss))
-    torch.save(model.state_dict(), os.path.join(model_dir, 'lr_checkpoint_version1.pt'))
+    torch.save(model.state_dict(), os.path.join(model_dir, 'lr_checkpoint.pt'))
