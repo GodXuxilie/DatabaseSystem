@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Opatix - Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="MyraStudio" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="/static/assets/images/favicon.ico">
+
+    <!-- Plugins css -->
+    <link href="/static/plugins/datatables/dataTables.bootstrap4.css" rel="stylesheet" type="text/css" />
+    <link href="/static/plugins/datatables/responsive.bootstrap4.css" rel="stylesheet" type="text/css" />
+    <link href="/static/plugins/datatables/buttons.bootstrap4.css" rel="stylesheet" type="text/css" />
+    <link href="/static/plugins/datatables/select.bootstrap4.css" rel="stylesheet" type="text/css" />
+
+    <!-- App css -->
+    <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/static/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="/static/assets/css/theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="/static/assets/css/customToolkit.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="bg">
+
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+
+            <div data-simplebar class="h-100">
+
+                <div class="navbar-brand-box">
+                    <a href="index.html" class="logo">
+                        <img src="/static/assets/images/logo-dark.png" />
+                    </a>
+                </div>
+
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title">Menu</li>
+
+                        <li>
+                            <a href="http://127.0.0.1:5000" class="waves-effect"><i class='bx bx-home-smile'></i><span class="badge badge-pill badge-primary float-right">3</span><span>Dashboard</span></a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+        <header id="page-topbar" class="topBarBgOut">
+            <div class="navbar-header topBarBgIn">
+
+                <div class="d-flex align-items-left">
+                    <button type="button" class="btn btn-sm mr-2 d-lg-none px-3 font-size-16 header-item waves-effect"
+                        id="vertical-menu-btn">
+                        <i class="fa fa-fw fa-bars"></i>
+                    </button>
+
+                    <div class="dropdown d-none d-sm-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="mdi mdi-plus"></i> 新建
+                            <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu">
+
+                            <!-- item-->
+<!--                            <a href="javascript:void(0);" class="dropdown-item notify-item">-->
+<!--                                Application-->
+<!--                            </a>-->
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex align-items-center">
+
+                    <!--全局搜索框-->
+                    <div class="dropdown d-none d-sm-inline-block ml-2">
+                        <button type="button" class="btn header-item noti-icon waves-effect"
+                            id="page-header-search-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="mdi mdi-magnify"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                            aria-labelledby="page-header-search-dropdown">
+
+                            <form class="p-3">
+                                <div class="form-group m-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search ..."
+                                            aria-label="Recipient's username">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit"><i
+                                                    class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!--语言切换-->
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="" src="/static/assets/images/flags/China.jpg" alt="Header Language" height="16">
+                            <span class="d-none d-sm-inline-block ml-1">简体中文</span>
+                            <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+
+                            <!-- item-->
+                            <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                <img src="/static/assets/images/flags/us.jpg" alt="user-image" class="mr-1" height="12">
+                                <span class="align-middle">English</span>
+                            </a>
+
+<!--                            &lt;!&ndash; item&ndash;&gt;-->
+<!--                            <a href="javascript:void(0);" class="dropdown-item notify-item">-->
+<!--                                <img src="assets/images/flags/germany.jpg" alt="user-image" class="mr-1" height="12">-->
+<!--                                <span class="align-middle">German</span>-->
+<!--                            </a>-->
+
+<!--                            &lt;!&ndash; item&ndash;&gt;-->
+<!--                            <a href="javascript:void(0);" class="dropdown-item notify-item">-->
+<!--                                <img src="assets/images/flags/italy.jpg" alt="user-image" class="mr-1" height="12">-->
+<!--                                <span class="align-middle">Italian</span>-->
+<!--                            </a>-->
+
+<!--                            &lt;!&ndash; item&ndash;&gt;-->
+<!--                            <a href="javascript:void(0);" class="dropdown-item notify-item">-->
+<!--                                <img src="assets/images/flags/russia.jpg" alt="user-image" class="mr-1" height="12">-->
+<!--                                <span class="align-middle">Russian</span>-->
+<!--                            </a>-->
+                        </div>
+                    </div>
+
+                    <!--消息通知-->
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item noti-icon waves-effect"
+                            id="page-header-notifications-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="mdi mdi-bell-outline"></i>
+                            <span class="badge badge-danger badge-pill">3</span>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right p-0"
+                            aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-3">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h6 class="m-0"> 消息通知 </h6>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#!" class="small font-weight-bold"> 查看全部</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-simplebar style="max-height: 230px;">
+                                <a href="" class="text-reset notification-item">
+                                    <div class="media">
+                                        <img src="/static/assets/images/users/avatar-5.jpg"
+                                            class="mr-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="media-body">
+                                            <h6 class="mt-0 mb-1">Samuel Coverdale</h6>
+                                            <p class="font-size-12 mb-1">You have new follower on Instagram</p>
+                                            <p class="font-size-11 font-weight-bold mb-0 text-muted"><i
+                                                    class="mdi mdi-clock-outline"></i> 2 分钟前</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="text-reset notification-item">
+                                    <div class="media">
+                                        <div class="avatar-xs mr-3">
+                                            <span class="avatar-title bg-primary rounded-circle">
+                                                <i class="mdi mdi-cloud-download-outline"></i>
+                                            </span>
+                                        </div>
+                                        <div class="media-body">
+                                            <h6 class="mt-0 mb-1">版本更新</h6>
+                                            <p class="font-size-11 mb-1">有新版本可以下载~
+                                                快来戳一戳吧！</p>
+                                            <p class="font-size-11 font-weight-bold mb-0 text-muted"><i
+                                                    class="mdi mdi-clock-outline"></i> 4 小时前</p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="text-reset notification-item">
+                                    <div class="media">
+                                        <img src="/static/assets/images/users/avatar-8.jpg"
+                                            class="mr-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="media-body">
+                                            <h6 class="mt-0 mb-1">Victoria Mendis</h6>
+                                            <p class="font-size-12 mb-1">刚刚升级为会员！</p>
+                                            <p class="font-size-11 font-weight-bold mb-0 text-muted"><i
+                                                    class="mdi mdi-clock-outline"></i> 1 天前</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="p-2">
+                                <a class="btn btn-sm btn-link btn-block text-center font-size-14" href="javascript:void(0)">
+                                    更多 <i class="mdi mdi-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--个人主页设置-->
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="rounded-circle header-profile-user" src="/static/assets/images/users/avatar-1.jpg"
+                                alt="Header Avatar">
+                            <span class="d-none d-sm-inline-block ml-1">{{userName}}</span>
+                            <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                href="http://127.0.0.1:5000">
+                                <span>推荐电影</span>
+                                <span>
+                                    <span class="badge badge-pill badge-soft-primary">3</span>
+                                </span>
+                            </a>
+<!--                            <a class="dropdown-item d-flex align-items-center justify-content-between"-->
+<!--                                href="javascript:void(0)">-->
+<!--                                <span>个人资料</span>-->
+<!--                                <span>-->
+<!--                                    <span class="badge badge-pill badge-soft-danger">1</span>-->
+<!--                                </span>-->
+<!--                            </a>-->
+<!--                            <a class="dropdown-item d-flex align-items-center justify-content-between"-->
+<!--                                href="javascript:void(0)">-->
+<!--                                Settings-->
+<!--                            </a>-->
+                            <a class="dropdown-item d-flex align-items-center justify-content-between"
+                                href="javascript:void(0)" onclick="click_logout()">
+                                <span>登出</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-flex align-items-center justify-content-between">
+                                <h4 class="mb-0 font-size-32">电影推荐列表</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">您正访问的页面</a></li>
+                                        <li class="breadcrumb-item active">电影推荐列表</li>
+                                    </ol>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>     
+                    <!-- end page title -->
+
+                    <div class="row">
+                        <div class="col-12">
+                             <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">快来看看你可能喜欢的电影吧(#^.^#)</h4>
+                                    <p class="card-subtitle mb-4">
+                                        这是根据您的个人用户信息所自动生成的电影推荐列表~
+                                    </p>
+
+                                    <div class="row">
+                                        <div class="col-sm-12 col-md-6">
+                                            <div class="dt-buttons btn-group">
+                                                <button class="btn btn-secondary buttons-copy" type="button" id="loadTable">
+                                                    <span>更新</span>
+                                                </button>
+                                                <span id="wait-img"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <table id="basic-datatable" class="table dt-responsive nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th>电影名</th>
+                                                <th>电影题材</th>
+                                                <th>大众评分</th>
+                                            </tr>
+                                        </thead>
+                                    
+                                    
+                                        <tbody>
+
+                                        </tbody>
+                                    </table>
+
+                                </div> <!-- end card body-->
+                            </div> <!-- end card -->
+                        </div><!-- end col-->
+                    </div>
+                    <!-- end row-->
+
+                </div> <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+<!--            <footer class="footer">-->
+<!--                <div class="container-fluid">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-sm-6">-->
+<!--                            2020 © Opatix.-->
+<!--                        </div>-->
+<!--                        <div class="col-sm-6">-->
+<!--                            <div class="text-sm-right d-none d-sm-block">-->
+<!--                                Design & Develop by Myra-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </footer>-->
+
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+    <!-- Overlay-->
+    <div class="menu-overlay"></div>
+
+
+    <!-- jQuery  -->
+    <script src="/static/assets/js/jquery.min.js"></script>
+    <script src="/static/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/assets/js/metismenu.min.js"></script>
+    <script src="/static/assets/js/waves.js"></script>
+    <script src="/static/assets/js/simplebar.min.js"></script>
+
+    <!-- third party js -->
+    <script src="/static/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/static/plugins/datatables/dataTables.bootstrap4.js"></script>
+    <script src="/static/plugins/datatables/dataTables.responsive.min.js"></script>
+    <script src="/static/plugins/datatables/responsive.bootstrap4.min.js"></script>
+    <script src="/static/plugins/datatables/dataTables.buttons.min.js"></script>
+    <script src="/static/plugins/datatables/buttons.bootstrap4.min.js"></script>
+    <script src="/static/plugins/datatables/buttons.html5.min.js"></script>
+    <script src="/static/plugins/datatables/buttons.flash.min.js"></script>
+    <script src="/static/plugins/datatables/buttons.print.min.js"></script>
+    <script src="/static/plugins/datatables/dataTables.keyTable.min.js"></script>
+    <script src="/static/plugins/datatables/dataTables.select.min.js"></script>
+    <script src="/static/plugins/datatables/pdfmake.min.js"></script>
+    <script src="/static/plugins/datatables/vfs_fonts.js"></script>
+    <!-- third party js ends -->
+
+    <!-- Datatables init -->
+    <script src="/static/assets/pages/datatables-demo.js"></script>
+
+    <!-- Datatables load data -->
+    <script src="/static/assets/pages/datatables-loaddata.js"></script>
+    <!-- App js -->
+    <script src="/static/assets/js/theme.js"></script>
+
+</body>
+
+</html>
