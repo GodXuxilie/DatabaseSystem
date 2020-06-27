@@ -24,5 +24,5 @@ Step 4:
 ```shell
 python backend.py
 ```
-Step 5:
-Opend index.html
+Step 5: <br/>
+Open index.html
